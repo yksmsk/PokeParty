@@ -1,0 +1,7 @@
+{
+  "name": "PokeParty",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
