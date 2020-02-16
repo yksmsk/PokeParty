@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { ComponentsModule } from "../components/components.modules"
 
 import { HomePage } from './home.page';
+import { PokedexComponent } from "../pages/pokedex/pokedex.component";
+import { PartyComponent } from "../pages/party/party.component";
 
 @NgModule({
   imports: [
@@ -20,6 +22,14 @@ import { HomePage } from './home.page';
     ]),
     ComponentsModule,
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    PokedexComponent,
+    PartyComponent
+  ],
+  exports: [
+    PokedexComponent,
+    PartyComponent
+  ]
 })
-export class HomePageModule {}
+export class HomePageModule { }
